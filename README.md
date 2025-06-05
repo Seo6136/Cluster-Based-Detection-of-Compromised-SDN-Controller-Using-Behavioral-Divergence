@@ -68,3 +68,66 @@ Future directions include support for multi-controller systems and adaptation to
 ---
 
 > 📎 For detailed implementation, refer to the code and usage instructions below.
+
+## How to Use the Code
+
+This section walks you through the full experimental pipeline — from setup to anomaly detection evaluation — based on our SDN controller compromise detection framework.
+
+---
+
+### 1. Install Requirements
+
+Before running the code, ensure the following are installed:
+
+#### System Dependencies:
+- Mininet (v2.3.1b4 or higher)
+- Ryu Controller (v4.34 or higher)
+- Ubuntu 20.04+ (recommended)
+- Optional: VMware/VirtualBox for virtualization
+
+#### Python Packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the Experiment Script
+```bash
+sudo python3 pyscript.py
+```
+- Runs the experiment for the configured number of iterations.
+- Raw output is saved in the data/ directory.
+
+- ### 3. Calculate Behavioral Indexes
+Extract behavioral indexes (e.g., SPI, PFSI, TFSI, PPR, PPD):
+```bash
+sudo python3 calculate_index.py
+```
+- Each experiment run will have its own index results stored in a subfolder within data/.
+
+- ### 4. (Optional) Visualize Indexes
+If you want to visualize the index values:
+```bash
+sudo python3 graph.py
+```
+- Generates plots for easier inspection and debugging.
+- This step is optional.
+
+- ### 5. Convert to CSV Format
+```bash
+sudo python3 data_process.py
+```
+
+- ### 6. Run Detection and Evaluate
+Run classification models and measure detection performance.
+- For Cluster-Based Detection:
+```bash
+sudo python3 ML.py       # Accuracy
+sudo python3 util.py     # Resource efficiency
+```
+- For Centralized Detection:
+```bash
+sudo python3 overall_ML.py     # Accuracy
+sudo python3 overall_util.py   # Resource efficiency
+```
+
+
