@@ -1,0 +1,339 @@
+Switch: s1
+cookie=0x0, duration=10.391s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.33,nw_dst=10.0.0.26,tp_src=80,tp_dst=35302 actions=output:5
+cookie=0x0, duration=10.381s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.2,nw_dst=10.0.0.10,tp_src=44856,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.381s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.310s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
+cookie=0x0, duration=7.412s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.30,nw_dst=10.0.0.21,tp_src=37162,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.207s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=6,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:3
+
+Switch: s10
+cookie=0x0, duration=10.442s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.15,nw_dst=10.0.0.4,tp_src=46966,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.411s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.2,nw_dst=10.0.0.10,tp_src=44856,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.373s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.276s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.7,nw_dst=10.0.0.4,tp_src=80,tp_dst=54466 actions=output:5
+cookie=0x0, duration=10.273s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.2,tp_src=80,tp_dst=44856 actions=output:4
+cookie=0x0, duration=12.409s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=3,nw_src=10.0.0.25,nw_dst=10.0.0.6 actions=output:6
+
+Switch: s11
+cookie=0x0, duration=10.452s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.13,nw_dst=10.0.0.3,tp_src=46766,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.446s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.4,nw_dst=10.0.0.7,tp_src=54466,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.363s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.351s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.305s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=12.434s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=6,nw_src=10.0.0.6,nw_dst=10.0.0.25 actions=output:1
+
+Switch: s12
+cookie=0x0, duration=10.444s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.4,nw_dst=10.0.0.15,tp_src=80,tp_dst=46966 actions=output:2
+cookie=0x0, duration=10.444s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.3,nw_dst=10.0.0.13,tp_src=80,tp_dst=46766 actions=output:1
+cookie=0x0, duration=10.393s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.378s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.378s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:6
+
+Switch: s13
+cookie=0x0, duration=10.476s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.17,nw_dst=10.0.0.11,tp_src=44270,tp_dst=80 actions=output:6
+cookie=0x0, duration=10.465s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.27,nw_dst=10.0.0.10,tp_src=80,tp_dst=53188 actions=output:5
+cookie=0x0, duration=10.414s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.2,nw_dst=10.0.0.10,tp_src=44856,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.370s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.7,nw_dst=10.0.0.4,tp_src=80,tp_dst=54466 actions=output:3
+cookie=0x0, duration=10.316s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.2,tp_src=80,tp_dst=44856 actions=output:2
+
+Switch: s14
+cookie=0x0, duration=10.497s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.34,nw_dst=10.0.0.10,tp_src=44838,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.475s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.4,nw_dst=10.0.0.7,tp_src=54466,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.459s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.9,nw_dst=10.0.0.22,tp_src=80,tp_dst=49008 actions=output:1
+
+Switch: s15
+cookie=0x0, duration=10.534s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.27,tp_src=53188,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.525s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.11,nw_dst=10.0.0.22,tp_src=53512,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.504s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.22,nw_dst=10.0.0.9,tp_src=49008,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.486s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.34,tp_src=80,tp_dst=44838 actions=output:2
+cookie=0x0, duration=10.473s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.11,nw_dst=10.0.0.17,tp_src=80,tp_dst=44270 actions=output:2
+cookie=0x0, duration=10.465s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.22,nw_dst=10.0.0.11,tp_src=80,tp_dst=53512 actions=output:6
+
+Switch: s16
+cookie=0x0, duration=10.536s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.4,tp_src=46966,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.531s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.17,nw_dst=10.0.0.11,tp_src=44270,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.522s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.33,nw_dst=10.0.0.14,tp_src=52714,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.515s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.27,nw_dst=10.0.0.17,tp_src=43196,tp_dst=80 actions=output:6
+cookie=0x0, duration=10.494s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.33,tp_src=80,tp_dst=52714 actions=output:2
+cookie=0x0, duration=10.447s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=6,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:2
+cookie=0x0, duration=12.496s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.14 actions=output:4
+cookie=0x0, duration=10.299s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:6
+
+Switch: s17
+cookie=0x0, duration=10.545s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.3,tp_src=46766,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.534s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.29,nw_dst=10.0.0.15,tp_src=47412,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.470s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=6,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:2
+cookie=0x0, duration=10.315s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:6
+
+Switch: s18
+cookie=0x0, duration=10.513s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.29,tp_src=80,tp_dst=47412 actions=output:3
+cookie=0x0, duration=10.506s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.17,nw_dst=10.0.0.27,tp_src=80,tp_dst=43196 actions=output:2
+cookie=0x0, duration=10.493s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.15,tp_src=80,tp_dst=46966 actions=output:5
+cookie=0x0, duration=10.492s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.13,tp_src=80,tp_dst=46766 actions=output:4
+cookie=0x0, duration=10.461s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.17,tp_src=80,tp_dst=44270 actions=output:6
+cookie=0x0, duration=10.461s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=6,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:1
+cookie=0x0, duration=12.533s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.15 actions=output:5
+cookie=0x0, duration=10.328s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=2,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:6
+cookie=0x0, duration=10.328s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:6
+
+Switch: s19
+cookie=0x0, duration=7.547s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.30,nw_dst=10.0.0.21,tp_src=37162,tp_dst=80 actions=output:5
+cookie=0x0, duration=7.542s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.21,nw_dst=10.0.0.30,tp_src=80,tp_dst=37162 actions=output:2
+
+Switch: s2
+cookie=0x0, duration=10.565s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.4,nw_dst=10.0.0.7,tp_src=54466,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.522s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.9,nw_dst=10.0.0.22,tp_src=80,tp_dst=49008 actions=output:4
+cookie=0x0, duration=10.511s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.24,nw_dst=10.0.0.36,tp_src=80,tp_dst=59154 actions=output:6
+cookie=0x0, duration=10.510s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=12.557s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.6,nw_dst=10.0.0.25 actions=output:5
+cookie=0x0, duration=10.359s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=6,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:3
+
+Switch: s20
+cookie=0x0, duration=10.545s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.24,nw_dst=10.0.0.36,tp_src=80,tp_dst=59154 actions=output:1
+cookie=0x0, duration=10.500s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.22,tp_src=80,tp_dst=49008 actions=output:5
+
+Switch: s21
+cookie=0x0, duration=10.612s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.22,nw_dst=10.0.0.9,tp_src=49008,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.609s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.11,nw_dst=10.0.0.22,tp_src=53512,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.596s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.36,nw_dst=10.0.0.24,tp_src=59154,tp_dst=80 actions=output:6
+cookie=0x0, duration=10.584s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.22,nw_dst=10.0.0.11,tp_src=80,tp_dst=53512 actions=output:3
+
+Switch: s22
+cookie=0x0, duration=10.630s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.30,nw_dst=10.0.0.21,tp_src=37162,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.627s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.26,nw_dst=10.0.0.33,tp_src=35302,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.619s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.27,nw_dst=10.0.0.17,tp_src=43196,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.611s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.27,nw_dst=10.0.0.10,tp_src=80,tp_dst=53188 actions=output:3
+cookie=0x0, duration=10.587s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.560s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.33,nw_dst=10.0.0.26,tp_src=80,tp_dst=35302 actions=output:4
+cookie=0x0, duration=7.594s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.21,nw_dst=10.0.0.30,tp_src=80,tp_dst=37162 actions=output:6
+cookie=0x0, duration=12.588s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6 actions=output:3
+
+Switch: s23
+cookie=0x0, duration=10.640s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.29,nw_dst=10.0.0.15,tp_src=47412,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.585s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:3
+cookie=0x0, duration=12.609s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.6,nw_dst=10.0.0.25 actions=output:4
+
+Switch: s24
+cookie=0x0, duration=10.661s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.10,nw_dst=10.0.0.27,tp_src=53188,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.610s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:3
+cookie=0x0, duration=10.556s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.15,nw_dst=10.0.0.29,tp_src=80,tp_dst=47412 actions=output:6
+cookie=0x0, duration=10.541s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.17,nw_dst=10.0.0.27,tp_src=80,tp_dst=43196 actions=output:5
+
+Switch: s25
+cookie=0x0, duration=10.672s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.33,nw_dst=10.0.0.14,tp_src=52714,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.660s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.31,nw_dst=10.0.0.34,tp_src=46986,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.657s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.26,nw_dst=10.0.0.33,tp_src=35302,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.634s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.33,nw_dst=10.0.0.26,tp_src=80,tp_dst=35302 actions=output:1
+cookie=0x0, duration=10.592s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.14,nw_dst=10.0.0.33,tp_src=80,tp_dst=52714 actions=output:5
+cookie=0x0, duration=10.505s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.502s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.441s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:1
+
+Switch: s26
+cookie=0x0, duration=10.683s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.10,tp_src=44838,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.645s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.31,tp_src=80,tp_dst=46986 actions=output:4
+cookie=0x0, duration=10.567s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.24,nw_dst=10.0.0.36,tp_src=80,tp_dst=59154 actions=output:6
+cookie=0x0, duration=10.521s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.454s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:1
+
+Switch: s27
+cookie=0x0, duration=10.684s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.36,nw_dst=10.0.0.24,tp_src=59154,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.626s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.34,tp_src=80,tp_dst=44838 actions=output:5
+cookie=0x0, duration=10.540s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.534s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.534s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.465s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:1
+
+Switch: s28
+cookie=0x0, duration=10.674s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.2,nw_dst=10.0.0.10,tp_src=44856,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.526s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.10,nw_dst=10.0.0.2,tp_src=80,tp_dst=44856 actions=output:5
+
+Switch: s29
+cookie=0x0, duration=10.706s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.4,nw_dst=10.0.0.7,tp_src=54466,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.704s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.15,nw_dst=10.0.0.4,tp_src=46966,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.702s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.13,nw_dst=10.0.0.3,tp_src=46766,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.692s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.4,nw_dst=10.0.0.15,tp_src=80,tp_dst=46966 actions=output:3
+cookie=0x0, duration=10.692s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.3,nw_dst=10.0.0.13,tp_src=80,tp_dst=46766 actions=output:3
+cookie=0x0, duration=10.541s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.7,nw_dst=10.0.0.4,tp_src=80,tp_dst=54466 actions=output:5
+
+Switch: s3
+cookie=0x0, duration=10.740s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.27,tp_src=53188,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.729s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.22,tp_src=53512,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.720s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.22,nw_dst=10.0.0.9,tp_src=49008,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.684s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.13,tp_src=80,tp_dst=46766 actions=output:3
+cookie=0x0, duration=10.674s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.585s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.500s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=6,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:3
+
+Switch: s30
+cookie=0x0, duration=10.746s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.5,nw_dst=10.0.0.6,tp_src=52464,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.733s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.6,nw_dst=10.0.0.5,tp_src=80,tp_dst=52464 actions=output:4
+cookie=0x0, duration=10.629s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.610s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.583s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:5
+cookie=0x0, duration=12.715s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.6,nw_dst=10.0.0.25 actions=output:2
+cookie=0x0, duration=12.699s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.25,nw_dst=10.0.0.6 actions=output:5
+
+Switch: s31
+cookie=0x0, duration=10.714s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.7,tp_src=54466,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.669s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.7,nw_dst=10.0.0.4,tp_src=80,tp_dst=54466 actions=output:1
+
+Switch: s32
+cookie=0x0, duration=10.785s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.27,tp_src=53188,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.752s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.34,nw_dst=10.0.0.10,tp_src=44838,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.745s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.22,nw_dst=10.0.0.9,tp_src=49008,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.740s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.34,tp_src=80,tp_dst=44838 actions=output:3
+cookie=0x0, duration=10.732s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.9,nw_dst=10.0.0.22,tp_src=80,tp_dst=49008 actions=output:2
+cookie=0x0, duration=10.732s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.27,nw_dst=10.0.0.10,tp_src=80,tp_dst=53188 actions=output:5
+cookie=0x0, duration=10.653s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.2,nw_dst=10.0.0.10,tp_src=44856,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.595s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.10,nw_dst=10.0.0.2,tp_src=80,tp_dst=44856 actions=output:1
+
+Switch: s33
+cookie=0x0, duration=10.790s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.11,nw_dst=10.0.0.22,tp_src=53512,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.759s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.17,nw_dst=10.0.0.11,tp_src=44270,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.745s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.11,nw_dst=10.0.0.17,tp_src=80,tp_dst=44270 actions=output:3
+cookie=0x0, duration=10.703s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.22,nw_dst=10.0.0.11,tp_src=80,tp_dst=53512 actions=output:4
+
+Switch: s34
+cookie=0x0, duration=10.797s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.3,tp_src=46766,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.776s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.33,nw_dst=10.0.0.14,tp_src=52714,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.763s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.14,nw_dst=10.0.0.33,tp_src=80,tp_dst=52714 actions=output:1
+cookie=0x0, duration=10.693s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.3,nw_dst=10.0.0.13,tp_src=80,tp_dst=46766 actions=output:4
+cookie=0xdeadbeef, duration=10.794s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.4,nw_tos=252,tp_src=46966,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.791s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.3,nw_tos=252,tp_src=46766,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.791s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.17,nw_dst=10.0.0.11,nw_tos=252,tp_src=44270,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.783s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.33,nw_dst=10.0.0.14,nw_tos=252,tp_src=52714,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.780s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.29,nw_dst=10.0.0.15,nw_tos=252,tp_src=47412,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.774s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.27,nw_dst=10.0.0.17,nw_tos=252,tp_src=43196,tp_dst=80 actions=drop
+cookie=0xdeadbeef, duration=10.751s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.33,nw_tos=252,tp_src=80,tp_dst=52714 actions=drop
+cookie=0xdeadbeef, duration=10.745s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.29,nw_tos=252,tp_src=80,tp_dst=47412 actions=drop
+cookie=0xdeadbeef, duration=10.737s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.17,nw_dst=10.0.0.27,nw_tos=252,tp_src=80,tp_dst=43196 actions=drop
+cookie=0xdeadbeef, duration=10.725s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.15,nw_tos=252,tp_src=80,tp_dst=46966 actions=drop
+cookie=0xdeadbeef, duration=10.725s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.13,nw_tos=252,tp_src=80,tp_dst=46766 actions=drop
+cookie=0xdeadbeef, duration=10.693s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.17,nw_tos=252,tp_src=80,tp_dst=44270 actions=drop
+cookie=0xdeadbeef, duration=10.693s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=6,nw_src=10.0.0.18,nw_dst=10.0.0.34,nw_tos=252,tp_src=52586,tp_dst=8080 actions=drop
+cookie=0x0, duration=12.765s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.14,nw_dst=10.0.0.15 actions=output:3
+cookie=0x0, duration=12.754s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.15,nw_dst=10.0.0.14 actions=output:5
+cookie=0xdeadbeef, duration=12.764s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.15,nw_tos=252 actions=drop
+cookie=0xdeadbeef, duration=12.755s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.15,nw_dst=10.0.0.14,nw_tos=252 actions=drop
+cookie=0xdeadbeef, duration=10.559s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=2,nw_src=10.0.0.34,nw_dst=10.0.0.18,nw_tos=252 actions=drop
+cookie=0xdeadbeef, duration=10.559s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.34,nw_dst=10.0.0.18,nw_tos=252 actions=drop
+
+Switch: s35
+cookie=0x0, duration=10.813s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.15,nw_dst=10.0.0.4,tp_src=46966,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.786s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.29,nw_dst=10.0.0.15,tp_src=47412,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.770s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.15,nw_dst=10.0.0.29,tp_src=80,tp_dst=47412 actions=output:3
+cookie=0x0, duration=10.702s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.4,nw_dst=10.0.0.15,tp_src=80,tp_dst=46966 actions=output:4
+cookie=0x0, duration=12.774s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=3,nw_src=10.0.0.14,nw_dst=10.0.0.15 actions=output:4
+cookie=0x0, duration=12.771s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=4,nw_src=10.0.0.15,nw_dst=10.0.0.14 actions=output:1
+
+Switch: s36
+cookie=0x0, duration=10.822s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.17,nw_dst=10.0.0.11,tp_src=44270,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.794s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.27,nw_dst=10.0.0.17,tp_src=43196,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.776s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.17,nw_dst=10.0.0.27,tp_src=80,tp_dst=43196 actions=output:3
+cookie=0x0, duration=10.749s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.676s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.11,nw_dst=10.0.0.17,tp_src=80,tp_dst=44270 actions=output:4
+cookie=0x0, duration=10.583s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=2,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:5
+cookie=0x0, duration=10.582s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=3,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:5
+cookie=0x0, duration=10.582s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=1,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:5
+
+Switch: s37
+cookie=0x0, duration=10.818s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.19,nw_dst=10.0.0.20,tp_src=59798,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.807s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.20,nw_dst=10.0.0.19,tp_src=80,tp_dst=59798 actions=output:4
+
+Switch: s38
+cookie=0x0, duration=10.847s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.22,nw_dst=10.0.0.9,tp_src=49008,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.830s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.11,nw_dst=10.0.0.22,tp_src=53512,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.819s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.22,nw_dst=10.0.0.11,tp_src=80,tp_dst=53512 actions=output:3
+cookie=0x0, duration=10.707s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.9,nw_dst=10.0.0.22,tp_src=80,tp_dst=49008 actions=output:5
+cookie=0x0, duration=7.813s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.30,nw_dst=10.0.0.21,tp_src=37162,tp_dst=80 actions=output:4
+cookie=0x0, duration=7.811s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.21,nw_dst=10.0.0.30,tp_src=80,tp_dst=37162 actions=output:1
+
+Switch: s39
+cookie=0x0, duration=10.830s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.36,nw_dst=10.0.0.24,tp_src=59154,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.815s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.24,nw_dst=10.0.0.36,tp_src=80,tp_dst=59154 actions=output:2
+
+Switch: s4
+cookie=0x0, duration=10.864s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.33,nw_dst=10.0.0.14,tp_src=52714,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.864s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.15,nw_dst=10.0.0.4,tp_src=46966,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.853s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.27,nw_dst=10.0.0.17,tp_src=43196,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.811s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.14,nw_dst=10.0.0.33,tp_src=80,tp_dst=52714 actions=output:6
+cookie=0x0, duration=10.735s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.690s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.2,tp_src=80,tp_dst=44856 actions=output:1
+cookie=0x0, duration=7.834s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.21,nw_dst=10.0.0.30,tp_src=80,tp_dst=37162 actions=output:5
+
+Switch: s40
+cookie=0x0, duration=10.884s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.26,nw_dst=10.0.0.33,tp_src=35302,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.844s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:2
+cookie=0x0, duration=10.779s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.33,nw_dst=10.0.0.26,tp_src=80,tp_dst=35302 actions=output:5
+cookie=0x0, duration=12.845s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.25 actions=output:4
+cookie=0x0, duration=12.840s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=4,nw_src=10.0.0.25,nw_dst=10.0.0.6 actions=output:1
+
+Switch: s41
+cookie=0x0, duration=10.890s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.10,nw_dst=10.0.0.27,tp_src=53188,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.888s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.27,nw_dst=10.0.0.17,tp_src=43196,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.879s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.27,nw_dst=10.0.0.10,tp_src=80,tp_dst=53188 actions=output:1
+cookie=0x0, duration=10.732s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.17,nw_dst=10.0.0.27,tp_src=80,tp_dst=43196 actions=output:4
+
+Switch: s42
+cookie=0x0, duration=10.911s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.30,nw_dst=10.0.0.21,tp_src=37162,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.907s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.29,nw_dst=10.0.0.15,tp_src=47412,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.771s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.15,nw_dst=10.0.0.29,tp_src=80,tp_dst=47412 actions=output:4
+cookie=0x0, duration=7.868s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.21,nw_dst=10.0.0.30,tp_src=80,tp_dst=37162 actions=output:5
+
+Switch: s43
+cookie=0x0, duration=10.920s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.32,nw_dst=10.0.0.31,tp_src=59530,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.915s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.31,nw_dst=10.0.0.34,tp_src=46986,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.906s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.31,nw_dst=10.0.0.32,tp_src=80,tp_dst=59530 actions=output:5
+cookie=0x0, duration=10.870s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.34,nw_dst=10.0.0.31,tp_src=80,tp_dst=46986 actions=output:4
+
+Switch: s44
+cookie=0x0, duration=10.936s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.10,tp_src=44838,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.936s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.33,nw_dst=10.0.0.14,tp_src=52714,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.913s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.31,nw_dst=10.0.0.34,tp_src=46986,tp_dst=80 actions=output:5
+cookie=0x0, duration=10.912s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.26,nw_dst=10.0.0.33,tp_src=35302,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.901s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.31,tp_src=80,tp_dst=46986 actions=output:2
+cookie=0x0, duration=10.901s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.33,nw_dst=10.0.0.26,tp_src=80,tp_dst=35302 actions=output:1
+cookie=0x0, duration=10.814s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.14,nw_dst=10.0.0.33,tp_src=80,tp_dst=52714 actions=output:4
+cookie=0x0, duration=10.788s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.10,nw_dst=10.0.0.34,tp_src=80,tp_dst=44838 actions=output:5
+cookie=0x0, duration=10.754s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.754s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=2,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.751s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=1,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:5
+cookie=0x0, duration=10.703s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:3
+
+Switch: s45
+cookie=0x0, duration=10.937s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.36,nw_dst=10.0.0.24,tp_src=59154,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.781s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.24,nw_dst=10.0.0.36,tp_src=80,tp_dst=59154 actions=output:5
+
+Switch: s5
+cookie=0x0, duration=10.947s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.29,nw_dst=10.0.0.15,tp_src=47412,tp_dst=80 actions=output:3
+cookie=0x0, duration=10.867s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.837s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
+
+Switch: s6
+cookie=0x0, duration=10.955s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.36,nw_dst=10.0.0.24,tp_src=59154,tp_dst=80 actions=output:4
+cookie=0x0, duration=10.921s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.34,tp_src=80,tp_dst=44838 actions=output:6
+cookie=0x0, duration=10.921s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=1,nw_src=10.0.0.4,nw_dst=10.0.0.15,tp_src=80,tp_dst=46966 actions=output:3
+cookie=0x0, duration=10.901s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.901s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.17,tp_src=80,tp_dst=44270 actions=output:3
+cookie=0x0, duration=10.890s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.17,nw_dst=10.0.0.27,tp_src=80,tp_dst=43196 actions=output:5
+cookie=0x0, duration=10.822s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
+cookie=0x0, duration=10.737s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=6,nw_src=10.0.0.34,nw_dst=10.0.0.18 actions=output:3
+
+Switch: s7
+cookie=0x0, duration=10.983s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.26,nw_dst=10.0.0.33,tp_src=35302,tp_dst=80 actions=output:6
+cookie=0x0, duration=10.978s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.17,nw_dst=10.0.0.11,tp_src=44270,tp_dst=80 actions=output:2
+cookie=0x0, duration=10.967s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=5,nw_src=10.0.0.27,nw_dst=10.0.0.10,tp_src=80,tp_dst=53188 actions=output:2
+cookie=0x0, duration=10.829s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=2,nw_src=10.0.0.7,nw_dst=10.0.0.4,tp_src=80,tp_dst=54466 actions=output:1
+cookie=0x0, duration=12.947s, table=0, , idle_timeout=1000, hard_timeout=3000, priority=10,icmp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6 actions=output:1
+
+Switch: s8
+cookie=0x0, duration=11.004s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=6,nw_src=10.0.0.34,nw_dst=10.0.0.10,tp_src=44838,tp_dst=80 actions=output:2
+cookie=0x0, duration=11.001s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.13,nw_dst=10.0.0.3,tp_src=46766,tp_dst=80 actions=output:1
+cookie=0x0, duration=10.885s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+
+Switch: s9
+cookie=0x0, duration=10.979s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=4,nw_src=10.0.0.22,nw_dst=10.0.0.11,tp_src=80,tp_dst=53512 actions=output:2
+cookie=0x0, duration=10.951s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=5,nw_src=10.0.0.25,nw_dst=10.0.0.6,tp_src=55713,tp_dst=8080 actions=output:1
+cookie=0x0, duration=10.951s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=12,tcp,in_port=3,nw_src=10.0.0.15,nw_dst=10.0.0.29,tp_src=80,tp_dst=47412 actions=output:5
+cookie=0x0, duration=10.905s, table=0, , idle_timeout=1200, hard_timeout=3000, priority=10,udp,in_port=3,nw_src=10.0.0.18,nw_dst=10.0.0.34,tp_src=52586,tp_dst=8080 actions=output:6
