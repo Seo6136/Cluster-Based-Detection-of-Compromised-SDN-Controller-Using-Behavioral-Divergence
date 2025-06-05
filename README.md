@@ -4,7 +4,7 @@ This repository supports the paper **"Cluster-Based Detection of Compromised SDN
 
 ---
 
-### 📝 Overview
+### Overview
 
 Software-Defined Networking (SDN) offers centralized programmability, but this centralization makes the controller a critical point of failure. If compromised, a controller may issue malicious flow rules while staying OpenFlow-compliant, making traditional detection methods ineffective—especially in large-scale networks.
 
@@ -12,7 +12,7 @@ We propose a **cluster-based anomaly detection method** that leverages the hiera
 
 ---
 
-### 📌 Architecture
+### Architecture
 
 The detection process is carried out in four steps:
 
@@ -25,7 +25,7 @@ The detection process is carried out in four steps:
 
 ---
 
-### 📊 Behavioral Indexes
+### Behavioral Indexes
 
 To characterize cluster behavior, five statistical indexes are used:
 
@@ -39,7 +39,7 @@ These indexes are computed per cluster and compared using **Max Pairwise Distanc
 
 ---
 
-### 🎯 Classification Accuracy
+### Classification Accuracy
 
 Extensive evaluation shows that the cluster-based method provides more **stable and scalable accuracy** compared to centralized detection, especially as topology size increases.
 
@@ -47,7 +47,7 @@ Extensive evaluation shows that the cluster-based method provides more **stable 
 
 ---
 
-### ⚙️ Scalability and Resource Efficiency
+### Scalability and Resource Efficiency
 
 Compared to centralized approaches, the proposed method achieves:
 
@@ -59,7 +59,7 @@ Compared to centralized approaches, the proposed method achieves:
 
 ---
 
-### ✅ Conclusion
+### Conclusion
 
 The proposed cluster-based detection framework achieves **high accuracy with significantly improved scalability** and resource efficiency. This makes it well-suited for large-scale SDN deployments in modern data center environments.
 
