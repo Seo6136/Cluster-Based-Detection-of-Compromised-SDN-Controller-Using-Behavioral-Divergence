@@ -1,37 +1,70 @@
 ## Cluster-Based Detection of Compromised SDN Controller Using Behavioral Divergence
 
-This repository accompanies the paper **"Cluster-Based Detection of Compromised SDN Controller Using Behavioral Divergence"**, which proposes a scalable framework for detecting malicious SDN controller behavior in large-scale data centers.
+This repository supports the paper **"Cluster-Based Detection of Compromised SDN Controller Using Behavioral Divergence"**, which introduces a scalable, localized anomaly detection framework for SDN environments.
+
+---
 
 ### 📝 Overview
 
-Software-Defined Networking (SDN) centralizes network control, which improves flexibility and manageability—but also creates a single point of failure. A compromised SDN controller can manipulate network flows while remaining protocol-compliant, making detection difficult, especially at scale.
+Software-Defined Networking (SDN) offers centralized programmability, but this centralization makes the controller a critical point of failure. If compromised, a controller may issue malicious flow rules while staying OpenFlow-compliant, making traditional detection methods ineffective—especially in large-scale networks.
 
-This project introduces a **cluster-based anomaly detection framework** that leverages **behavioral divergence** among localized switch groups (or "clusters") in hierarchical topologies such as FatTree and Clos. The key idea is to detect inconsistencies in behavioral patterns across pods rather than relying on full-network monitoring.
+We propose a **cluster-based anomaly detection method** that leverages the hierarchical and localized traffic nature of data centers.
 
-### 🔍 Key Contributions
+---
 
-- **Pod-Level Monitoring**: Switches are grouped into clusters based on traffic locality (e.g., pods), and behavioral metrics are computed per cluster.
-- **Max Pairwise Distance (MPD)**: Anomaly detection is based on the maximum behavioral divergence between clusters using MPD, capturing deviations without full network visibility.
-- **Behavioral Indexes**: Five core metrics are introduced to quantify behavior:
-  - Switch Participation Index (SPI)
-  - Priority Frequency Spike Index (PFSI)
-  - Timeout Frequency Spike Index (TFSI)
-  - Packet Processing Ratio (PPR)
-  - Packet Processing Divergence (PPD)
-- **Threat Model**: Evaluates multiple stealthy attack vectors such as silent drops, flow rule abuse, and covert mirroring—while the controller remains OpenFlow-compliant.
-- **Traffic Simulation**: Uses a custom DCT2Gen-inspired traffic generator to emulate realistic east-west data center traffic patterns.
-- **Experimental Results**: Shows that the cluster-based method maintains high detection accuracy with lower overhead and better scalability compared to centralized approaches.
+### 📌 Architecture
 
-### 🏗️ Experimental Environment
+The detection process is carried out in four steps:
 
-- **SDN Emulator**: Mininet v2.3.1b4
-- **Controller**: Ryu v4.34
-- **Topology**: k-ary Fat-Tree (k = 4, 6, 8, 10)
-- **Classifier Models**: Random Forest, Adaboost, Decision Tree, MLP, Naïve Bayes
-- **Metrics**: Detection accuracy, CPU/memory usage, latency
+1. **Local Monitoring** at each pod using the Cluster Index Monitoring System (CIMS)  
+2. **Behavioral Index Extraction** from flow table and packet activity  
+3. **Transfer of index vectors** to the central monitoring server  
+4. **Anomaly Classification** based on inter-cluster divergence  
 
-### 📌 Conclusion
+![Framework Overview](./framework-001.png)
 
-The proposed method offers an efficient, accurate, and scalable solution for detecting compromised SDN controllers in hierarchical data center networks. By exploiting spatial traffic locality and reducing monitoring overhead, this approach is well-suited for deployment in hyperscale cloud environments.
+---
 
-****
+### 📊 Behavioral Indexes
+
+To characterize cluster behavior, five statistical indexes are used:
+
+- **SPI**: Switch Participation Index  
+- **PFSI**: Priority Frequency Spike Index  
+- **TFSI**: Timeout Frequency Spike Index  
+- **PPR**: Packet Processing Ratio  
+- **PPD**: Packet Processing Divergence  
+
+These indexes are computed per cluster and compared using **Max Pairwise Distance (MPD)** to capture abnormal divergence.
+
+---
+
+### 🎯 Classification Accuracy
+
+Extensive evaluation shows that the cluster-based method provides more **stable and scalable accuracy** compared to centralized detection, especially as topology size increases.
+
+![Classification Accuracy](./accuracy.png)
+
+---
+
+### ⚙️ Scalability and Resource Efficiency
+
+Compared to centralized approaches, the proposed method achieves:
+
+- Lower latency
+- Lower CPU usage at scale
+- Consistently low memory footprint
+
+![Scalability and Efficiency](./efficiency.png)
+
+---
+
+### ✅ Conclusion
+
+The proposed cluster-based detection framework achieves **high accuracy with significantly improved scalability** and resource efficiency. This makes it well-suited for large-scale SDN deployments in modern data center environments.
+
+Future directions include support for multi-controller systems and adaptation to evolving attack strategies.
+
+---
+
+> 📎 For detailed implementation, refer to the code and usage instructions below.
